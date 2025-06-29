@@ -32,6 +32,8 @@
 /var/run/host/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/9.0.6/ref/net9.0/Microsoft.Win32.Registry.dll
 /var/run/host/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/9.0.6/ref/net9.0/mscorlib.dll
 /var/run/host/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/9.0.6/ref/net9.0/netstandard.dll
+/home/myoukin/.nuget/packages/pythonnet/3.0.5/lib/netstandard2.0/Python.Runtime.dll
+/home/myoukin/.nuget/packages/semi.avalonia/11.2.1.8/lib/net8.0/Semi.Avalonia.dll
 /home/myoukin/.nuget/packages/skiasharp/2.88.9/lib/net6.0/SkiaSharp.dll
 /var/run/host/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/9.0.6/ref/net9.0/System.AppContext.dll
 /var/run/host/usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/9.0.6/ref/net9.0/System.Buffers.dll

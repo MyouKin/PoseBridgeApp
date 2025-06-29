@@ -3,18 +3,117 @@
         xmlns:vm="using:PoseBridgeApp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="640"
         x:Class="PoseBridgeApp.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="PoseBridgeApp">
+        Title="PoseBridgeApp"
+        SizeToContent="WidthAndHeight"
+        MinHeight="640"
+        MinWidth="480">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    
+    <WrapPanel
+        Margin="10">
+        <StackPanel>
+            <TextBlock
+                Margin="15,10,0,5">选择数据源</TextBlock>
+            <StackPanel>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="source"
+                    Content="Camera"
+                    IsChecked="True">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="source"
+                    Content="Video">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="source"
+                    Content="Raw in">
+                </RadioButton>
+            </StackPanel>
+            
+            <TextBlock
+                Margin="15,10,0,5">选择推理后端</TextBlock>
+            <StackPanel>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="backend"
+                    Content="MediaPipePose"
+                    IsChecked="True">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="backend"
+                    Content="mmPose">
+                </RadioButton>
+            </StackPanel>
+            
+            <TextBlock
+                Margin="15,10,0,5">选择输出</TextBlock>
+            <StackPanel>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="SteamVR OpenVR"
+                    IsChecked="True">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="VRChat OSC">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="Monado OpenXR">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="Raw in">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="VMT">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="ROS2">
+                </RadioButton>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock
+                Margin="20,10,0,5"
+                Theme="{DynamicResource TitleTextBlock}"
+                Classes="H1">
+                PoseBridge 0.1
+            </TextBlock>
+            <!-- <Panel> -->
+            <!--     <Rectangle Height="240" Width="320" Fill="LightGray"/> -->
+            <!--     <Image Margin="20" Height="240" Width="320"  -->
+            <!--            Source="/Assets/myoukin.jpg"/> -->
+            <!-- </Panel> -->
+            
+            <Button
+                Margin="20,10,0,5"
+                Click="StartOnClick"
+                Name="StartButton"
+                Classes="Large">
+                以当前设置启动
+            </Button>
+        </StackPanel>
+    </WrapPanel>
 </Window>

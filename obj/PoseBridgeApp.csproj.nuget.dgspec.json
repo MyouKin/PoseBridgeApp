@@ -67,6 +67,14 @@
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"
+            },
+            "Semi.Avalonia": {
+              "target": "Package",
+              "version": "[11.2.1.8, )"
+            },
+            "pythonnet": {
+              "target": "Package",
+              "version": "[3.0.5, )"
             }
           },
           "imports": [

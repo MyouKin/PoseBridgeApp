@@ -72,3 +72,6 @@
 /home/myoukin/RiderProjects/PoseBridgeApp/obj/Debug/net9.0/PoseBridgeApp.pdb
 /home/myoukin/RiderProjects/PoseBridgeApp/obj/Debug/net9.0/PoseBridgeApp.genruntimeconfig.cache
 /home/myoukin/RiderProjects/PoseBridgeApp/obj/Debug/net9.0/ref/PoseBridgeApp.dll
+/home/myoukin/RiderProjects/PoseBridgeApp/obj/Debug/net9.0/PoseBridgeApp.sourcelink.json
+/home/myoukin/RiderProjects/PoseBridgeApp/bin/Debug/net9.0/Python.Runtime.dll
+/home/myoukin/RiderProjects/PoseBridgeApp/bin/Debug/net9.0/Semi.Avalonia.dll

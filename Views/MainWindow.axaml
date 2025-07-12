@@ -96,24 +96,43 @@
         </StackPanel>
         <StackPanel>
             <TextBlock
+                HorizontalAlignment="Center"
                 Margin="20,10,0,5"
                 Theme="{DynamicResource TitleTextBlock}"
                 Classes="H1">
-                PoseBridge 0.1
+                PoseBridge 0.1.2
             </TextBlock>
-            <!-- <Panel> -->
-            <!--     <Rectangle Height="240" Width="320" Fill="LightGray"/> -->
-            <!--     <Image Margin="20" Height="240" Width="320"  -->
-            <!--            Source="/Assets/myoukin.jpg"/> -->
-            <!-- </Panel> -->
+            
+            <WrapPanel
+                HorizontalAlignment="Center"
+                Margin="0,10,0,5">
+                <Button
+                    Name="ShowPyLocateButton"
+                    Classes="Tertiary"
+                    IsEnabled="False"
+                    Width="180">
+                    选择Python可执行文件
+                </Button>
+                <Button
+                    Click="PyPicker_OnClick">
+                    📂
+                </Button>
+            </WrapPanel>
             
             <Button
-                Margin="20,10,0,5"
-                Click="StartOnClick"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,5"
+                Click="Start_OnClick"
                 Name="StartButton"
-                Classes="Large">
+                Theme="{DynamicResource SolidButton}">
                 以当前设置启动
             </Button>
+            
+            <TextBlock
+                Margin="20,10,0,5"
+                VerticalAlignment="Bottom">
+                By MyouKin@MyouKin Industries
+            </TextBlock>
         </StackPanel>
     </WrapPanel>
 </Window>

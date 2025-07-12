@@ -24,7 +24,15 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="pythonnet" Version="3.0.5" />
         <PackageReference Include="Semi.Avalonia" Version="11.2.1.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\bak.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 </Project>

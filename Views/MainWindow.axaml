@@ -38,7 +38,7 @@
                 <RadioButton
                     Theme="{DynamicResource CardRadioButton}"
                     GroupName="source"
-                    Content="Raw in">
+                    Content="Socket">
                 </RadioButton>
             </StackPanel>
             
@@ -48,7 +48,7 @@
                 <RadioButton
                     Theme="{DynamicResource CardRadioButton}"
                     GroupName="backend"
-                    Content="MediaPipePose"
+                    Content="MediaPipe Pose"
                     IsChecked="True">
                 </RadioButton>
                 <RadioButton
@@ -64,7 +64,7 @@
                 <RadioButton
                     Theme="{DynamicResource CardRadioButton}"
                     GroupName="output"
-                    Content="SteamVR OpenVR"
+                    Content="OpenVR"
                     IsChecked="True">
                 </RadioButton>
                 <RadioButton
@@ -75,22 +75,17 @@
                 <RadioButton
                     Theme="{DynamicResource CardRadioButton}"
                     GroupName="output"
-                    Content="Monado OpenXR">
-                </RadioButton>
-                <RadioButton
-                    Theme="{DynamicResource CardRadioButton}"
-                    GroupName="output"
-                    Content="Raw in">
-                </RadioButton>
-                <RadioButton
-                    Theme="{DynamicResource CardRadioButton}"
-                    GroupName="output"
                     Content="VMT">
                 </RadioButton>
                 <RadioButton
                     Theme="{DynamicResource CardRadioButton}"
                     GroupName="output"
                     Content="ROS2">
+                </RadioButton>
+                <RadioButton
+                    Theme="{DynamicResource CardRadioButton}"
+                    GroupName="output"
+                    Content="Socket">
                 </RadioButton>
             </StackPanel>
         </StackPanel>
@@ -130,7 +125,8 @@
             
             <TextBlock
                 Margin="20,10,0,5"
-                VerticalAlignment="Bottom">
+                FontSize="12"
+                >
                 By MyouKin@MyouKin Industries
             </TextBlock>
         </StackPanel>

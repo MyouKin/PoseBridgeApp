@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PoseBridgeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+901aff23507d271c3ee216dfd5a50b6c7d81834b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3edd8ebbe17ebdc2daf92161bacbd177335546b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PoseBridgeApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PoseBridgeApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
